@@ -325,7 +325,7 @@ export class Game {
                     this.finish();
                 }
                 doublebtn.onclick = () => {
-                    if(this.player.count < 21){
+                    if(this.player.count < 21 && this.player.balance >= this.player.bet){
                         this.player.drawCard(this.idSpil, this.player.sit);
                         this.player.balance -= this.player.bet;
                         this.player.bet *=2;
