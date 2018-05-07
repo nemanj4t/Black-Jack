@@ -340,7 +340,7 @@ export class Game {
                             hitbtn.disabled = true;
                             standbtn.disabled = true;
                             doublebtn.disabled = true;
-                            game.finish();
+                            this.finish();
                         }
                     },2000);
 
